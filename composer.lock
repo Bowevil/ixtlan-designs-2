@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6149d15754a53783f4e398acb9e3396",
+    "content-hash": "d411422dd22656de44d049a3e5cf3287",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1985,6 +1985,52 @@
             }
         },
         {
+            "name": "drupal/radix",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/radix",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/radix-8.x-3.1.zip",
+                "reference": null,
+                "shasum": "010c54c7d586852c08ae4d207eb477506f410ace"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1486028883"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "arshadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "dsnopek",
+                    "homepage": "https://www.drupal.org/user/266527"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/radix",
+            "support": {
+                "source": "http://cgit.drupalcode.org/radix"
+            }
+        },
+        {
             "name": "drupal/restui",
             "version": "1.13.0",
             "source": {
@@ -1995,7 +2041,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/restui-8.x-1.13.zip",
-                "reference": null,
+                "reference": "8.x-1.13",
                 "shasum": "808fc735bd9f80069fe1353b7b0f8390d294ff28"
             },
             "require": {

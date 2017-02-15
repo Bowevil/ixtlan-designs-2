@@ -10,6 +10,49 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/_variables.scss
  */
+@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/* line 42, ../sass/_default-variables.scss */
+.footer {
+  background: transparent url(../images/footer.png) repeat-x 0 0;
+  -webkit-background-size: 100% 100%;
+  -khtml-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -ms-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 47, ../sass/_default-variables.scss */
+#block-ixtlandesigns-views-block-restful-contact-us-block, #block-ixtlandesigns-views-block-client-list-frontpage-block {
+  padding: 0px 10px 0px 10px;
+}
+
+/* line 52, ../sass/_default-variables.scss */
+h2.block-title {
+  border-color: #944d5a;
+  border-style: none none solid none;
+  border-width: 0px 0px 1px 0px;
+}
+
+/* line 59, ../sass/_default-variables.scss */
+.copyright {
+  display: block;
+  align: center;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1728,11 +1771,11 @@ html {
 
 /* line 27, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Average Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: #DBCFAE;
 }
 
 /* line 36, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -1747,13 +1790,13 @@ textarea {
 
 /* line 48, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #337ab7;
+  color: #000000;
   text-decoration: none;
 }
 /* line 52, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 /* line 58, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:focus {
@@ -1787,7 +1830,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #DBCFAE;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2015,13 +2058,13 @@ mark,
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #337ab7;
+  color: #000000;
 }
 
 /* line 8, ../bootstrap/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: black;
 }
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
@@ -2075,13 +2118,13 @@ a.text-danger:focus {
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #337ab7;
+  background-color: #000000;
 }
 
 /* line 8, ../bootstrap/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: black;
 }
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
@@ -3530,7 +3573,7 @@ th {
 }
 /* line 62, ../bootstrap/assets/stylesheets/bootstrap/_tables.scss */
 .table .table {
-  background-color: #fff;
+  background-color: #DBCFAE;
 }
 
 /* line 75, ../bootstrap/assets/stylesheets/bootstrap/_tables.scss */
@@ -4524,32 +4567,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 71, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #000000;
+  border-color: black;
 }
 /* line 11, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: black;
+  border-color: black;
 }
 /* line 17, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: black;
+  border-color: black;
 }
 /* line 22, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: black;
+  border-color: black;
 }
 /* line 29, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: black;
+  border-color: black;
 }
 /* line 37, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -4557,12 +4600,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 45, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #000000;
+  border-color: black;
 }
 /* line 53, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary .badge {
-  color: #337ab7;
+  color: #000000;
   background-color: #fff;
 }
 
@@ -4748,7 +4791,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 /* line 96, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #337ab7;
+  color: #000000;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4764,8 +4807,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 115, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #FFFFFF;
+  text-decoration: none;
   background-color: transparent;
 }
 /* line 123, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
@@ -4941,7 +4984,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #000000;
 }
 
 /* line 103, ../bootstrap/assets/stylesheets/bootstrap/_dropdowns.scss */
@@ -5468,7 +5511,7 @@ tbody.collapse.in {
 /* line 46, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #000000;
 }
 /* line 59, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -5505,7 +5548,7 @@ tbody.collapse.in {
 /* line 96, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fff;
+  background-color: #DBCFAE;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -5526,7 +5569,7 @@ tbody.collapse.in {
 /* line 131, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #000000;
 }
 
 /* line 144, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
@@ -5598,7 +5641,7 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #DBCFAE;
   }
 }
 
@@ -6298,7 +6341,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857;
   text-decoration: none;
-  color: #337ab7;
+  color: #000000;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6321,7 +6364,7 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #FFFFFF;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6332,8 +6375,8 @@ tbody.collapse.in {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #000000;
+  border-color: #000000;
   cursor: default;
 }
 /* line 64, ../bootstrap/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6485,11 +6528,11 @@ a.label:hover, a.label:focus {
 
 /* line 48, ../bootstrap/assets/stylesheets/bootstrap/_labels.scss */
 .label-primary {
-  background-color: #337ab7;
+  background-color: #000000;
 }
 /* line 7, ../bootstrap/assets/stylesheets/bootstrap/mixins/_labels.scss */
 .label-primary[href]:hover, .label-primary[href]:focus {
-  background-color: #286090;
+  background-color: black;
 }
 
 /* line 52, ../bootstrap/assets/stylesheets/bootstrap/_labels.scss */
@@ -6559,7 +6602,7 @@ a.label:hover, a.label:focus {
 }
 /* line 41, ../bootstrap/assets/stylesheets/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #000000;
   background-color: #fff;
 }
 /* line 47, ../bootstrap/assets/stylesheets/bootstrap/_badges.scss */
@@ -6639,7 +6682,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #DBCFAE;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -6665,7 +6708,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #000000;
 }
 
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_alerts.scss */
@@ -6804,7 +6847,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #337ab7;
+  background-color: #000000;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -7015,8 +7058,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #000000;
+  border-color: #000000;
 }
 /* line 96, ../bootstrap/assets/stylesheets/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-heading,
@@ -7030,7 +7073,7 @@ button.list-group-item {
 }
 /* line 101, ../bootstrap/assets/stylesheets/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-  color: #c7ddef;
+  color: #666666;
 }
 
 /* line 4, ../bootstrap/assets/stylesheets/bootstrap/mixins/_list-group.scss */
@@ -7496,26 +7539,26 @@ button.list-group-item-danger.active:focus {
 
 /* line 257, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel-primary {
-  border-color: #337ab7;
+  border-color: #000000;
 }
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #000000;
+  border-color: #000000;
 }
 /* line 11, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #337ab7;
+  border-top-color: #000000;
 }
 /* line 14, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading .badge {
-  color: #337ab7;
+  color: #000000;
   background-color: #fff;
 }
 /* line 20, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #337ab7;
+  border-bottom-color: #000000;
 }
 
 /* line 260, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
@@ -7888,7 +7931,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Average Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8026,7 +8069,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Average Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8868,7 +8911,7 @@ html.js .form-item .input-group-addon .glyphicon {
 }
 /* line 30, ../sass/component/_ajax.scss */
 html.js .form-item .input-group-addon .glyphicon.glyphicon-spin {
-  color: #337ab7;
+  color: #000000;
   opacity: 1;
 }
 /* line 35, ../sass/component/_ajax.scss */
@@ -8929,7 +8972,7 @@ html.js .ajax-new-content:empty {
 /* line 10, ../sass/component/_file.scss */
 .file > span {
   background: #fff;
-  color: #337ab7;
+  color: #000000;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
@@ -9065,7 +9108,7 @@ table .checkbox.form-no-label, table .radio.form-no-label {
 }
 /* line 45, ../sass/component/_form.scss */
 .select-wrapper:after {
-  color: #337ab7;
+  color: #000000;
   content: '▼';
   font-style: normal;
   font-weight: 400;
@@ -9285,7 +9328,7 @@ body.navbar-is-fixed-bottom {
 }
 /* line 20, ../sass/component/_table-drag.scss */
 .tabledrag-handle:hover, .tabledrag-handle:focus {
-  color: #337ab7;
+  color: #000000;
 }
 
 /* line 24, ../sass/component/_table-drag.scss */
@@ -9499,7 +9542,7 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Average Sans", sans-serif;
   font-size: 14px;
   list-style: none;
   min-width: 160px;
@@ -9530,7 +9573,7 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 }
 /* line 44, ../sass/jquery-ui/_autocomplete.scss */
 .ui-autocomplete .ui-menu-item.ui-state-active, .ui-autocomplete .ui-menu-item.ui-state-focus {
-  background: #337ab7;
+  background: #000000;
   color: #fff;
 }
 

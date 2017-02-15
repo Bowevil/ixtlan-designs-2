@@ -12,3 +12,51 @@
 
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+//** Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+
+//** Import the mixins
+@import "../sasscss3mixins/css3-mixins.scss";
+
+//** Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:  "Average Sans", sans-serif !default;
+$font-weight: 400 !default;
+
+//** Setting link attributes.
+$brand-primary: #000000;
+$link-color: $brand-primary;
+$link-hover-color: #FFFFFF;
+$link-hover-decoration: none;
+
+//** Background color for `<body>`.
+$body-bg: #DBCFAE;
+
+//** define the base path before the mixin
+$imagedir:'../images/';
+
+@mixin backgroundShorthandWithExternalVar($filename, $repeat: repeat-x, $position:0 0) {
+    background: transparent url(#{$imagedir}#{$filename}) $repeat $position ;
+}
+
+.footer {
+    @include backgroundShorthandWithExternalVar('footer.png');
+   @include background-size();
+}
+
+#block-ixtlandesigns-views-block-restful-contact-us-block, #block-ixtlandesigns-views-block-client-list-frontpage-block {
+  //background-color: darken($body-bg, 10%);
+  padding: 0px 10px 0px 10px;
+}
+
+h2.block-title {
+    border-color: #944d5a;
+    border-style: none none solid none;
+    border-width: 0px 0px 1px 0px;
+}
+
+
+.copyright {
+  display: block;
+  align: center;
+}
